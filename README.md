@@ -30,4 +30,4 @@ The API will be available at `http://localhost:3000`.
 ## Endpoints
 
 - `GET /countries`: Retrieve a list of all countries
-- `GET /country/:countryCode`: Get detailed information about a specific country
+- `GET /countries/:countryCode`: Get detailed information about a specific country
