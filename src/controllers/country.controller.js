@@ -1,5 +1,3 @@
-const { DATE_NAGGER_ROUTE, COUNTRIES_NOW } = require("../const");
-
 class CountryController {
   async getCountry(req, res) {
       const countryCode = req.params.countryCode;
@@ -10,11 +8,11 @@ class CountryController {
       
       try {
         // Fetch country info
-        const countryResponse = await fetch(`${DATE_NAGGER_ROUTE}/CountryInfo/${countryCode}`);
+        const countryResponse = await fetch(`${process.env.DATE_NAGGER_ROUTE}/CountryInfo/${countryCode}`);
         const country = await countryResponse.json();
 
         // Fetch population and flag
-        const populationPromise = fetch(`${COUNTRIES_NOW}/countries/population`, {
+        const populationPromise = fetch(`${process.env.COUNTRIES_NOW}/countries/population`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -24,7 +22,7 @@ class CountryController {
             })
         });
 
-        const flagPromise = fetch(`${COUNTRIES_NOW}/countries/flag/images`, {
+        const flagPromise = fetch(`${process.env.COUNTRIES_NOW}/countries/flag/images`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
