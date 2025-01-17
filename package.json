@@ -1,30 +1,32 @@
 {
-  "name": "country-api",
-  "version": "1.0.0",
-  "description": "Task for DevelopsToday",
-  "main": "index.js",
-  "scripts": {
-    "start": "node --env-file=.env src/index.js",
-    "test": "test",
-    "lint": "./node_modules/.bin/eslint --fix"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Tulioleal/country-api.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Tulioleal/country-api/issues"
-  },
-  "homepage": "https://github.com/Tulioleal/country-api#readme",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.21.2"
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.18.0",
-    "eslint": "^9.18.0",
-    "globals": "^15.14.0"
-  }
+    "name": "country-api",
+    "version": "1.0.0",
+    "description": "Task for DevelopsToday",
+    "main": "index.js",
+    "scripts": {
+        "start": "node --env-file=.env src/index.js",
+        "test": "test",
+        "lint": "./node_modules/.bin/eslint --fix && prettier --write ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Tulioleal/country-api.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Tulioleal/country-api/issues"
+    },
+    "homepage": "https://github.com/Tulioleal/country-api#readme",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "eslint-config-prettier": "^10.0.1",
+        "express": "^4.21.2",
+        "prettier": "^3.4.2"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.18.0",
+        "eslint": "^9.18.0",
+        "globals": "^15.14.0"
+    }
 }
