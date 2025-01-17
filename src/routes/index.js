@@ -1,7 +1,7 @@
-const { setCountriesRoutes } = require("./countries");
-const { setCountryRoutes } = require("./country");
+const { setCountriesRoutes } = require('./countries')
+const { setCountryRoutes } = require('./country')
 
 module.exports = {
-  setCountriesRoutes,
-  setCountryRoutes
-};
+    setCountriesRoutes,
+    setCountryRoutes,
+}
