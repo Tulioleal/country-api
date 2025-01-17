@@ -1,0 +1,23 @@
+{
+  "name": "country-api",
+  "version": "1.0.0",
+  "description": "Task for DevelopsToday",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tulioleal/country-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tulioleal/country-api/issues"
+  },
+  "homepage": "https://github.com/Tulioleal/country-api#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
