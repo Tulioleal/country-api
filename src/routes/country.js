@@ -1,4 +1,4 @@
-const cors = require('cors');
+var cors = require('cors')
 const { CountryController } = require('../controllers/country.controller');
 
 function setCountryRoutes(app) {
@@ -7,7 +7,7 @@ function setCountryRoutes(app) {
   // Allow all origins (or specify allowed origins)
   app.use(cors());
 
-  app.post('/countries', (request, response) =>
+  app.get('/countries/:countryCode', cors(), (request, response) =>
     countryController.getCountry(request, response));
 }
 
