@@ -44,7 +44,7 @@ class CountryController {
             flag: flag.data.flag
         });
     } catch (error) {
-        res.status(500).json({ error: "An error occurred while fetching country data" });
+        res.status(500).json({ errorMessage: "An error occurred while fetching country data", error });
     }
   }
 }
