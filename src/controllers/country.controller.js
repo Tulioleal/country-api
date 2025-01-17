@@ -37,6 +37,7 @@ class CountryController {
             .then(responses => Promise.all(responses.map(response => response.json())));
 
         res.json({
+            name: country.commonName,
             borderCountries: country.borders,
             populationByYear: population.data.populationCounts,
             flag: flag.data.flag
